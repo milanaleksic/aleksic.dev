@@ -76,7 +76,7 @@ theme = "hugo-identity-theme"
 	[[params.social]]
 		title = "CV"
 		icon = "fa-file-pdf-o"
-		link = "public/cv_milanaleksic.pdf"
+		link = "public/cv"
 	
 	# Footer settings
 	[params.footer]
