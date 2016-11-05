@@ -74,6 +74,11 @@ theme = "hugo-identity-theme"
 		link = "https://www.linkedin.com/in/milanaleksic"
 
 	[[params.social]]
+		title = "Email"
+		icon = "fa-envelope"
+		link = "mailto:milanaleksic@gmail.com"
+
+	[[params.social]]
 		title = "CV"
 		icon = "fa-file-pdf-o"
 		link = "public/cv"
