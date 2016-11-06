@@ -21,12 +21,12 @@ function aws() {
 aws s3 --region $REGION sync --acl "public-read" --sse "AES256" /data/public/ s3://$BUCKET_NAME --exclude 'public/cv*'
 
 # backwards-compatible links don't have .pdf extensions, so upload must happen manually
-aws s3 cp /data/public/public/cv s3://milanaleksic.net-cdn/public/ --content-type 'application/pdf'
-aws s3 cp /data/public/public/cv-app1 s3://milanaleksic.net-cdn/public/ --content-type 'application/pdf'
-aws s3 cp /data/public/public/cv-app2 s3://milanaleksic.net-cdn/public/ --content-type 'application/pdf'
-aws s3 cp /data/public/public/cv-app3 s3://milanaleksic.net-cdn/public/ --content-type 'application/pdf'
-aws s3 cp /data/public/public/cv-app4 s3://milanaleksic.net-cdn/public/ --content-type 'application/pdf'
-aws s3 cp /data/public/public/cv-nostrification s3://milanaleksic.net-cdn/public/ --content-type 'image/jpeg'
+aws s3 cp /data/public/public/cv s3://milanaleksic.net-cdn/public/ --content-type 'application/pdf' --acl "public-read" --sse "AES256"
+aws s3 cp /data/public/public/cv-app1 s3://milanaleksic.net-cdn/public/ --content-type 'application/pdf' --acl "public-read" --sse "AES256"
+aws s3 cp /data/public/public/cv-app2 s3://milanaleksic.net-cdn/public/ --content-type 'application/pdf' --acl "public-read" --sse "AES256"
+aws s3 cp /data/public/public/cv-app3 s3://milanaleksic.net-cdn/public/ --content-type 'application/pdf' --acl "public-read" --sse "AES256"
+aws s3 cp /data/public/public/cv-app4 s3://milanaleksic.net-cdn/public/ --content-type 'application/pdf' --acl "public-read" --sse "AES256"
+aws s3 cp /data/public/public/cv-nostrification s3://milanaleksic.net-cdn/public/ --content-type 'image/jpeg' --acl "public-read" --sse "AES256"
 
 # Invalidate root page and page listings
-aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths '/*'
+aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths '/'
