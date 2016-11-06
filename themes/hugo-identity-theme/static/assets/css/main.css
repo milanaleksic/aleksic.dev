@@ -127,7 +127,7 @@ a {
     -ms-transition: color 0.2s ease, text-shadow 0.2s ease;
     transition: color 0.2s ease, text-shadow 0.2s ease; }
   a:hover {
-    color: #ff7496; }
+    color: #000; }
 
 strong, b {
   color: #313f47; }
@@ -229,7 +229,7 @@ textarea {
   input[type="tel"]:focus,
   select:focus,
   textarea:focus {
-    border-color: #ff7496; }
+    border-color: #000; }
 
 .select-wrapper {
   text-decoration: none;
@@ -312,11 +312,11 @@ input[type="radio"] {
       width: 1.65em; }
   input[type="checkbox"]:checked + label:before,
   input[type="radio"]:checked + label:before {
-    color: #ff7496;
+    color: #000;
     content: '\f00c'; }
   input[type="checkbox"]:focus + label:before,
   input[type="radio"]:focus + label:before {
-    border-color: #ff7496; }
+    border-color: #000; }
 
 input[type="checkbox"] + label:before {
   border-radius: 4px; }
@@ -377,7 +377,6 @@ ul {
     list-style: none;
     padding-left: 0; }
     ul.alt li {
-      border-top: solid 1px #c8cccf;
       padding: 0.5em 0; }
       ul.alt li:first-child {
         border-top: 0;
@@ -397,7 +396,6 @@ ul {
         width: 3.75em;
         height: 3.75em;
         border-radius: 100%;
-        border: solid 1px #c8cccf;
         line-height: 3.75em;
         overflow: hidden;
         text-align: center;
@@ -410,11 +408,9 @@ ul {
           font-style: normal;
           font-weight: normal;
           text-transform: none !important; }
-        ul.icons li a:before {
-          color: #ffffff;
-          text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf; }
-        ul.icons li a:hover:before {
-          text-shadow: 1.25px 0px 0px #ff7496, -1.25px 0px 0px #ff7496, 0px 1.25px 0px #ff7496, 0px -1.25px 0px #ff7496; }
+        /*ul.icons li a:before {*/
+          /*color: #ffffff;*/
+          /*text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf; }*/
         ul.icons li a:before {
           position: absolute;
           top: 0;
@@ -426,7 +422,7 @@ ul {
           text-align: center;
           text-indent: 0; }
         ul.icons li a:hover {
-          border-color: #ff7496; }
+          border-color: #000; }
     @media screen and (max-width: 480px) {
       ul.icons li a:before {
         font-size: 1.5rem; } }
@@ -480,8 +476,8 @@ button,
   input[type="button"]:hover,
   button:hover,
   .button:hover {
-    border-color: #ff7496;
-    color: #ff7496 !important; }
+    border-color: #000;
+    color: #000 !important; }
   input[type="submit"].icon,
   input[type="reset"].icon,
   input[type="button"].icon,
