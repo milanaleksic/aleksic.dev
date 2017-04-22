@@ -2,6 +2,7 @@
 
 set -e
 
+WORK_DIR="$( dirname "${BASH_SOURCE[0]}" )"
 DISTRIBUTION_ID=E2JJSCIKYBNNNS
 BUCKET_NAME=milanaleksic.net-cdn
 REGION="eu-central-1"
@@ -23,6 +24,11 @@ function awsd() {
         garland/aws-cli-docker \
         aws --region $REGION "$@"
 }
+
+cd $WORK_DIR
+if [ ! -d public ]; then
+	mkdir public 
+fi
 
 # Build a fresh copy
 hugod -v
