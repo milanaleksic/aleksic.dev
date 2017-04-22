@@ -1,25 +1,27 @@
 #!/bin/bash
 
+set -e
+
 DISTRIBUTION_ID=E2JJSCIKYBNNNS
 BUCKET_NAME=milanaleksic.net-cdn
 REGION="eu-central-1"
 
 function hugod() {
-	docker run --rm \
-		-v $(pwd):/src \
-		-v $(pwd)/public:/output \
-		--user `id -u $USER`:`id -g $USER` \
-		jojomi/hugo "$@"
+    docker run --rm --publish-all \
+        -v $(pwd):/src \
+        -v $(pwd)/public:/output \
+        --user `id -u $USER`:`id -g $USER` \
+        jojomi/hugo hugo "$@"
 }
 
 function awsd() {
-	docker run -i --rm \
-		-v `pwd`:/data \
-		-v `pwd`/.aws:/root/.aws \
-	    --env AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID \
-	    --env AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY \
-	    garland/aws-cli-docker \
-	    aws --region $REGION "$@"
+    docker run -i --rm \
+	    -v `pwd`:/data \
+        -v `pwd`/.aws:/root/.aws \
+        --env AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID \
+        --env AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY \
+        garland/aws-cli-docker \
+        aws --region $REGION "$@"
 }
 
 # Build a fresh copy

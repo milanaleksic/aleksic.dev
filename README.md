@@ -1,7 +1,7 @@
 ## milanaleksic.net website source
 
-This is just temporary setup because of ISP problems, this will all be moved to full CD via 
-Semaphore CI and mostly-CloudFormation driven automated setup like Igor (https://github.com/milanaleksic/igor) 
-works, but priorities these days have changed. 
+[![Build Status](https://semaphoreci.com/api/v1/milanaleksic/man-website/branches/master/badge.svg)](https://semaphoreci.com/milanaleksic/man-website)
 
-Don't look at this project as a source of good practices.
+Very simple static web site setup using Hugo, with predefined manual Amazon ACM certificate, NOIP domain and Amazon S3+CloudFront setup.
+
+No dependencies except Docker.
