@@ -4,8 +4,13 @@ DISTRIBUTION_ID=E2JJSCIKYBNNNS
 BUCKET_NAME=milanaleksic.net-cdn
 REGION="eu-central-1"
 
-# Build a fresh copy
-hugo -v 
+function hugod() {
+	docker run --rm \
+		-v $(pwd):/src \
+		-v $(pwd)/public:/output \
+		--user `id -u $USER`:`id -g $USER` \
+		jojomi/hugo "$@"
+}
 
 function awsd() {
 	docker run -i --rm \
@@ -16,6 +21,9 @@ function awsd() {
 	    garland/aws-cli-docker \
 	    aws --region $REGION "$@"
 }
+
+# Build a fresh copy
+hugod -v
 
 # Copy over pages - not static js/img/css/downloads
 awsd s3 --region $REGION sync --acl "public-read" --sse "AES256" /data/public/ s3://$BUCKET_NAME --exclude 'public/cv*'
