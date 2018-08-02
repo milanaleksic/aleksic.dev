@@ -28,7 +28,8 @@ theme = "hugo-identity-theme"
 	# Personal settings
 	
     name = "Milan Aleksić"
-	position = "Java, Scala and Go programmer"
+	position = "Software engineer and tinkerer"
+	position2 = "{Java,Python,Go}@TomTom Gent"
 	
 	# Extra stuff
 	# NOTE: There is little different extra stuff in original Identity theme by HTML5 UP.
@@ -69,7 +70,7 @@ theme = "hugo-identity-theme"
 		link = "https://twitter.com/milanaleksic"
 
 	[[params.social]]
-		title = "Facebook"
+		title = "LinkedIn"
 		icon = "fa-linkedin"
 		link = "https://www.linkedin.com/in/milanaleksic"
 
