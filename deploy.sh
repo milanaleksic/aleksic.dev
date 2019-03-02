@@ -3,7 +3,8 @@
 set -e
 
 WORK_DIR="$( dirname "${BASH_SOURCE[0]}" )"
-DISTRIBUTION_ID=E2JJSCIKYBNNNS
+DISTRIBUTION_ID_NET=E2JJSCIKYBNNNS
+DISTRIBUTION_ID_DEV=E67KXMCG4ZDSJ
 BUCKET_NAME=milanaleksic.net-cdn
 REGION="eu-central-1"
 
@@ -44,5 +45,6 @@ awsd s3 cp /data/public/public/cv-app3 s3://milanaleksic.net-cdn/public/ --conte
 awsd s3 cp /data/public/public/cv-app4 s3://milanaleksic.net-cdn/public/ --content-type 'application/pdf' --acl "public-read" --sse "AES256"
 awsd s3 cp /data/public/public/cv-nostrification s3://milanaleksic.net-cdn/public/ --content-type 'image/jpeg' --acl "public-read" --sse "AES256"
 
-# # Invalidate root page and page listings
-awsd cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths '/'
+# Invalidate root page and page listings
+awsd cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID_NET --paths '/'
+awsd cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID_DEV --paths '/'
