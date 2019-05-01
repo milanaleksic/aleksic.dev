@@ -3,7 +3,6 @@
 set -e
 
 WORK_DIR="$( dirname "${BASH_SOURCE[0]}" )"
-#DISTRIBUTION_ID_NET=E2JJSCIKYBNNNS
 DISTRIBUTION_ID_DEV=E67KXMCG4ZDSJ
 BUCKET_NAME=milanaleksic.net-cdn
 REGION="eu-central-1"
