@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/milanaleksic
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://aleksic.dev
+  * I am milanaleksic (https://keybase.io/milanaleksic) on keybase.
+  * I have a public key with fingerprint DF46 6544 CFD4 69A5 4FA0  1F6A D92A 3E9D 70AC 479D
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "010157559942940c831e6db8857fc3617530e18b213f67e1aff0f45580c9050821b30a",
+      "fingerprint": "df466544cfd469a54fa01f6ad92a3e9d70ac479d",
+      "host": "keybase.io",
+      "key_id": "d92a3e9d70ac479d",
+      "kid": "010157559942940c831e6db8857fc3617530e18b213f67e1aff0f45580c9050821b30a",
+      "uid": "1213e0f85713f03c7f3d929e10be2f00",
+      "username": "milanaleksic"
+    },
+    "service": {
+      "hostname": "aleksic.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1589308977,
+  "expire_in": 157680000,
+  "prev": "55478c3e32b3b9da1802140bf8f1fbf836bbfe495f656e55585c0449be07861e",
+  "seqno": 61,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMIoAnicrZJbSBRRGMdXK62tzc3tIRXFpgs9bHLOzJy5LGVF0PUhLcQu0jqXc9ZJ
+nVlnZjfNNvQhkiACoQdT6IIogaRJgRqYWkghBBJhEAUlSUVKESEVSGfE3nrsPJzD
+Od/v//++8/E9CSzz+dOCfS2DlQ8vjqdNjLYnfKeH5mAjo1p6AxNpZKrx4oFrdOy4
+0WpDZyIMgAAiESFZ5lmZB5rEQSzoqiQhkWicAEXEAQwllYUcEUQMFUIA4RGSgCYD
+BCQWqhxQmDBDDDOG7bhtmC611QkvCIjnNaLzgqwgnigAEkHRZVbhsKyLQNF4Udap
+sMpyPAUtTlUcXGRY9I1eoovl/YP/z3UnFu0g5TAgVE15wGki4WhqGUOgYpYA4IEO
+tk2lFlO61qhRTKUGVzuGxqTCDI0kDQ17zfV+s0QtAUU6TlJ53LZcS7NqaKDKdeNO
+xBO6DXGPPIvV6JJHVDVMnbaSKpLYdgzLZCKQkppreKYQSTIHJFkUwwyujxs2jhoe
+gURBAnR5eWi6CIMQL0oahzlW5VRZV6AEWMgDlUgEErpzgqoSzMuICEjAiDYGaYDn
+ZRUDURIgZrxf1ZkWExEgrVOJUU/HiJmKm7AxkxobqVjuS/P7MlakezPm868K/p28
+B9mZC9uDHdcPHg38NK6j5PSBcz3z7K6jOy4P/Z7ctkl6UvkcNyVWD6dKz6wtCGcX
+5vt665ttMPD1hNYT5zN3rqp/O/rehmUfct29n16uC1WM3SjvfV3o39h0Nb37VM6x
+jIX+ktD3PTOfnx4OBdtvV6Qf6gzU5SWNXxvWtN6c7d7y+Ag//yg0M3Ula2VWcVNu
+88e73E02lPElfyFQ2fEM32s5cWiu6fAxsGmivmu44ULf+vKc5pwzd2I/pnsujQS2
+trdIvm+Dk9b9uZm+W+Mv2lJFwdqOgqHjY2XFbQUd561rs6Ub4t/GT071t77rX/+m
+pHPzbmHbvoHZwVd5qa6ovF8x7V/r/gDwfjht
+=xaFr
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/milanaleksic
+
+==================================================================
