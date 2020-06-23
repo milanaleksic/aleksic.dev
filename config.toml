@@ -29,7 +29,7 @@ theme = "hugo-identity-theme"
 	
     name = "Milan Aleksić"
 	position = "Software engineer and tinkerer"
-	position2 = "Backend @ SodaData.io"
+	position2 = "Backend @ Soda.io"
 	
 	# Extra stuff
 	# NOTE: There is little different extra stuff in original Identity theme by HTML5 UP.
