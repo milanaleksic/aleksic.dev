@@ -1,3 +1,3 @@
 ## aleksic.dev website source
 
-Very simple static web site setup using Hugo+Netlify, nothing really interesting here
+Very simple static web site setup using Hugo+Cloudflare pages, nothing really interesting here
