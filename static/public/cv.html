@@ -29,7 +29,7 @@
 </head>
 <body>
 <h1 id="milan-aleksić">Milan Aleksić</h1>
-<p>Last updated: 22/01/2022</p>
+<p>Last updated: 25/01/2022</p>
 <h2 id="personal">Personal</h2>
 <p>Born on 21/12/1983, Smederevo (Serbia), living in Koekelberg (Belgium) since 2011. I have dual citizenship of Belgium and Serbia.</p>
 <p>My website is <a href="https://aleksic.dev">aleksic.dev</a>, email is <a href="mailto:milan@aleksic.dev">milan@aleksic.dev</a> and Twitter account is: <a href="https://twitter.com/milanaleksic">milanaleksic</a>. I am fairly active on <a href="https://github.com/milanaleksic">github.com/milanaleksic</a>. I also have a <a href="https://www.linkedin.com/in/milanaleksic">LinkedIn account</a> if you’d like to connect with me. My public GPG key is: <a href="https://pgp.key-server.io/pks/lookup?search=0xDF7A2E812429D391&amp;fingerprint=on&amp;op=vindex">0xDF7A2E812429D391</a>.</p>
@@ -82,10 +82,11 @@ Senior Software Engineer @ SodaData (Belgium)
 <ul>
 <li>Programming languages: (mostly) Java 8/11/17 and Python 3</li>
 <li>Cloud development on AWS using Terraform (ECS, Batch, SQS, RDS MySQL…)</li>
-<li>Broad data sources coverage: PostgreSQL, Redshift, Athena, Spark</li>
-<li>Tasked with backend feature development guidance, integration, reliability and other operational concerns of the Soda Cloud solution from the “early days”</li>
-<li>Created internal <code>do.py</code> tool for various devops/security tasks</li>
+<li>Tasked with backend feature development, guidance and documentation</li>
+<li>Deep observability setup via DataDog, incident management and other operational concerns of the Soda Cloud solution in the “early days”, handed over to dedicated personnel as we grew</li>
 </ul></li>
+<li>Created internal <code>do.py</code> tool for various devops/security tasks</li>
+<li>Broad data sources exposure while helping bootstrap <a href="https://github.com/sodadata/soda-sql">Soda SQL</a>: PostgreSQL, Redshift, Athena, Spark</li>
 </ul>
 </details>
 <details>
@@ -266,7 +267,7 @@ Intern software developer @ ESAProjekt
 <p>Period: <strong>2006</strong></p>
 <p>Projects:</p>
 <ul>
-<li>Usage of iOmniscient video recognition software for parking lots (C#)</li>
+<li>Case study of iOmniscient video recognition software application for parking lots (C#)</li>
 </ul>
 </details>
 </details>
@@ -279,7 +280,7 @@ Selected open source projects
 <ul>
 <li><a href="https://github.com/milanaleksic/thoughttrain">Thought Train</a> (Go, PostgreSQL, ANTLR, Vue.js, Bootstrap; BADUC)
 <ul>
-<li>Feature-rich web page content extraction and knokwledge graph service</li>
+<li>Feature-rich web page content extraction and knowledge graph service</li>
 <li>Search Query grammar, Pulumi-based AWS cloud setup</li>
 <li>(closed source) mobile applications built using Flutter (Android, iOS)</li>
 </ul></li>
@@ -322,7 +323,7 @@ Selected closed source personal projects
 <li>Home Laboratory
 <ul>
 <li>Cluster of 8+ hybrid (ARM 5/6/7, amd64, cloud instances) servers and 3 switches</li>
-<li>Chef (Zero) used for config mgmt, Gitea as git repo</li>
+<li>Chef (Zero) used for config mgmt (moving to Ansible+Nomad), Gitea as git repo</li>
 <li>Monitoring via Grafana, InfluxDB, Grafana Loki and Tempo</li>
 </ul></li>
 <li>BADUC (Bastion+DroneCI+Usher+Consul; also Chef, Gitea, SystemD)
@@ -330,11 +331,12 @@ Selected closed source personal projects
 <li>CD system for artifact deployment in my home network</li>
 <li>Uses self-developed Go microservices like Bastion (HTTP server endpoint to trigger deployment), Usher (node agents that execute deployment)</li>
 <li>Deployment workflow handled via combination of DroneCI (or Semaphore CI) Consul, SystemD and Chef</li>
+<li>Proven to myself I can build a system like this, I am slowly moving away from it (to Nomad)</li>
 </ul></li>
 <li>Batler (Go, BADUC)
 <ul>
 <li>Telegram bot I use for home automation tasks like turning on/off my workhorse laptop, Windows VM</li>
-<li>Used as on-prem notification bridge for Synology and all other services</li>
+<li>Used as on-prem notification gateway for Synology and all other services</li>
 </ul></li>
 <li>NovinarnicaDownload (Scala, Akka, Spray.io, Google OAuth&amp;GMail, Pushbullet)
 <ul>
