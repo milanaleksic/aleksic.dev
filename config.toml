@@ -88,6 +88,11 @@ theme = "hugo-identity-theme"
 		title = "CV"
 		icon = "fa-file-pdf-o"
 		link = "public/cv.pdf"
+		
+	[[params.social]]
+		title = "Blog"
+		icon = "fa-feather
+		link = "https://blog.aleksic.dev"
 	
 	# Footer settings
 	[params.footer]
