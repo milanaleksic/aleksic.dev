@@ -86,7 +86,7 @@ theme = "hugo-identity-theme"
 		
 	[[params.social]]
 		title = "Blog"
-		icon = "fa-feather"
+		icon = "fa-pencil"
 		link = "https://blog.aleksic.dev"
 	
 	# Footer settings
