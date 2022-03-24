@@ -81,11 +81,6 @@ theme = "hugo-identity-theme"
 
 	[[params.social]]
 		title = "CV"
-		icon = "fa-html5"
-		link = "public/cv"
-
-	[[params.social]]
-		title = "CV"
 		icon = "fa-file-pdf-o"
 		link = "public/cv.pdf"
 		
