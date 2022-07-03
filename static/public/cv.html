@@ -278,12 +278,6 @@ Selected open source projects
 </h2>
 <p></summary></p>
 <ul>
-<li><a href="https://github.com/milanaleksic/thoughttrain">Thought Train</a> (Go, PostgreSQL, ANTLR, Vue.js, Bootstrap; BADUC)
-<ul>
-<li>Feature-rich web page content extraction and knowledge graph service</li>
-<li>Search Query grammar, Pulumi-based AWS cloud setup</li>
-<li>(closed source) mobile applications built using Flutter (Android, iOS)</li>
-</ul></li>
 <li><a href="https://github.com/milanaleksic/ghh">Github Helper CLI</a> (Rust, Github API)
 <ul>
 <li>epic issues dependency graph handling, branch names and other “my flow” helpers</li>
@@ -322,18 +316,24 @@ Selected closed source personal projects
 <ul>
 <li>Home Laboratory
 <ul>
-<li>Cluster of 8+ hybrid (ARM 5/6/7, amd64, cloud instances) servers and 3 switches</li>
-<li>Chef (Zero) used for config mgmt (moving to Ansible+Nomad), Gitea as git repo</li>
+<li>Cluster of 7 hybrid (aarch64, amd64, on premises and on cloud) servers and 3 switches</li>
+<li>Ansible for bootstrapping, Nomad/Consul for job scheduling, Gitea as git repo</li>
 <li>Monitoring via Grafana, InfluxDB, Grafana Loki and Tempo</li>
+</ul></li>
+<li>Thought Train (Go, PostgreSQL, ANTLR, Vue.js, Bootstrap)
+<ul>
+<li>Feature-rich web page content extraction and knowledge graph service</li>
+<li>Search Query grammar, Pulumi-based AWS cloud setup</li>
+<li>mobile applications built using Flutter (Android, iOS)</li>
 </ul></li>
 <li>BADUC (Bastion+DroneCI+Usher+Consul; also Chef, Gitea, SystemD)
 <ul>
 <li>CD system for artifact deployment in my home network</li>
 <li>Uses self-developed Go microservices like Bastion (HTTP server endpoint to trigger deployment), Usher (node agents that execute deployment)</li>
 <li>Deployment workflow handled via combination of DroneCI (or Semaphore CI) Consul, SystemD and Chef</li>
-<li>Proven to myself I can build a system like this, I am slowly moving away from it (to Nomad)</li>
+<li>Fully deprecated and replaced with Home Laboratory v2</li>
 </ul></li>
-<li>Batler (Go, BADUC)
+<li>Batler (Go)
 <ul>
 <li>Telegram bot I use for home automation tasks like turning on/off my workhorse laptop, Windows VM</li>
 <li>Used as on-prem notification gateway for Synology and all other services</li>
@@ -341,6 +341,7 @@ Selected closed source personal projects
 <li>NovinarnicaDownload (Scala, Akka, Spray.io, Google OAuth&amp;GMail, Pushbullet)
 <ul>
 <li>Content crawler and CBR packager of magazines from www.novinarnica.net</li>
+<li>Fully deprecated and replaced with Novinarnica v2 which is fully Go</li>
 </ul></li>
 <li>Movie Catalog System (Java, Baobab)
 <ul>
