@@ -70,6 +70,12 @@ theme = "hugo-identity-theme"
 		link = "https://twitter.com/milanaleksic"
 
 	[[params.social]]
+		title = "Mastodon"
+		icon = "fa-mastodon"
+		link = "https://c.im/@milanaleksic"
+		rel = true
+
+	[[params.social]]
 		title = "LinkedIn"
 		icon = "fa-linkedin"
 		link = "https://www.linkedin.com/in/milanaleksic"
@@ -81,7 +87,7 @@ theme = "hugo-identity-theme"
 
 	[[params.social]]
 		title = "CV"
-		icon = "fa-file-pdf-o"
+		icon = "fa-file-pdf"
 		link = "public/cv.pdf"
 		
 	[[params.social]]

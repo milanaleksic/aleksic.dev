@@ -44,13 +44,10 @@
               <h1>{{ .Site.Params.name  }}</h1>
               <p>{{ .Site.Params.position  }}<br>{{ .Site.Params.position2  }}</p>
             </header>
-                    {{ if .Site.Params.contact.enable }}
-                    {{ partial "contact.html" . }}
-                  {{ end }}
             <footer>
               <ul class="icons">
                 {{ range .Site.Params.social }}
-                  <li><a href="{{ .link }}" class="{{ .icon }}">{{ .title }}</a></li>
+                  <li><a href="{{ .link }}" class="{{ .icon }}" {{ if .rel }} rel="me" {{ end }}>{{ .title }}</a></li>
                 {{ end }}
               </ul>
             </footer>
