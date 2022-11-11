@@ -1,3 +1,4 @@
 website.json
 distroConfig.json
 /public/
+.hugo_build.lock

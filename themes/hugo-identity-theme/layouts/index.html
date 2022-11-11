@@ -35,7 +35,6 @@
     {{ range .Site.Params.custom_css }}
         <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
     {{ end }}
-    {{ .Hugo.Generator }}
   </head>
   <body class="is-loading">
       <div id="wrapper">
