@@ -406,17 +406,13 @@ ul {
           font-family: FontAwesome;
           font-style: normal;
           font-weight: normal;
-          text-transform: none !important; }
-        /*ul.icons li a:before {*/
-          /*color: #ffffff;*/
-          /*text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf; }*/
-        ul.icons li a:before {
+          text-transform: none !important;
           position: absolute;
           top: 0;
           left: 0;
           width: inherit;
           height: inherit;
-          font-size: 1.85rem;
+          font-size: x-large;
           line-height: inherit;
           text-align: center;
           text-indent: 0; }
@@ -642,5 +638,3 @@ button,
       padding: 0.75em; } }
   body.is-ie #wrapper {
     height: 100%; }
-
-/*# sourceMappingURL=main.css.map */
