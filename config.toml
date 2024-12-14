@@ -70,12 +70,6 @@ theme = "hugo-identity-theme"
 		link = "https://bsky.app/profile/aleksic.dev"
 
 	[[params.social]]
-		title = "Mastodon"
-		icon = "fa-mastodon"
-		link = "https://c.im/@milanaleksic"
-		rel = true
-
-	[[params.social]]
 		title = "LinkedIn"
 		icon = "fa-linkedin"
 		link = "https://www.linkedin.com/in/milanaleksic"
