@@ -400,7 +400,7 @@ ul {
         overflow: hidden;
         text-align: center;
         white-space: nowrap; }
-        ul.icons li a:before {
+        ul.icons li span {
           -moz-osx-font-smoothing: grayscale;
           -webkit-font-smoothing: antialiased;
           font-family: FontAwesome;
