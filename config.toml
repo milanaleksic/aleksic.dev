@@ -65,9 +65,9 @@ theme = "hugo-identity-theme"
 	# You may change these with your social links or add others
 
 	[[params.social]]
-		title = "Twitter"
-		icon = "fa-twitter"
-		link = "https://twitter.com/milanaleksic"
+		title = "Bluesky"
+		icon = "fa-bluesky"
+		link = "https://bsky.app/profile/aleksic.dev"
 
 	[[params.social]]
 		title = "Mastodon"
