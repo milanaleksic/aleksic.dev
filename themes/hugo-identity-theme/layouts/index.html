@@ -47,7 +47,7 @@
             <footer>
               <ul class="icons">
                 {{ range .Site.Params.social }}
-                  <li><a href="{{ .link }}"><span>class="{{ .icon }}" {{ if .rel }} rel="me" {{ end }}</span>{{ .title }}</a></li>
+                  <li><a href="{{ .link }}"><span class="{{ .icon }}" {{ if .rel }} rel="me" {{ end }}> </span>{{ .title }}</a></li>
                 {{ end }}
               </ul>
             </footer>
