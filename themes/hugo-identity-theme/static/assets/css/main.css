@@ -389,6 +389,7 @@ ul {
       display: inline-block;
       padding: 0.675em 0.5em; }
       ul.icons li a {
+        font-size: smaller;
         text-decoration: none;
         position: relative;
         display: block;

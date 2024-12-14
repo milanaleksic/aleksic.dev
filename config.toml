@@ -66,27 +66,27 @@ theme = "hugo-identity-theme"
 
 	[[params.social]]
 		title = "Bluesky"
-		icon = "fa-bluesky"
+		icon = "fa-brands fa-bluesky"
 		link = "https://bsky.app/profile/aleksic.dev"
 
 	[[params.social]]
 		title = "LinkedIn"
-		icon = "fa-linkedin"
+		icon = "fa-brands fa-linkedin"
 		link = "https://www.linkedin.com/in/milanaleksic"
 
 	[[params.social]]
 		title = "Email"
-		icon = "fa-envelope"
+		icon = "fa-solid fa-envelope"
 		link = "mailto:milan@aleksic.dev"
 
 	[[params.social]]
 		title = "CV"
-		icon = "fa-file-pdf"
+		icon = "fa-solid fa-file-pdf"
 		link = "public/cv.pdf"
 		
 	[[params.social]]
 		title = "Blog"
-		icon = "fa-pencil"
+		icon = "fa-solid fa-pencil"
 		link = "https://blog.aleksic.dev"
 	
 	# Footer settings
