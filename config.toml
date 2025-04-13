@@ -82,7 +82,7 @@ theme = "hugo-identity-theme"
 	[[params.social]]
 		title = "CV"
 		icon = "fa-solid fa-file-pdf"
-		link = "public/cv.pdf"
+		link = "https://aleksic.dev/public/cv.pdf"
 		
 	[[params.social]]
 		title = "Blog"
