@@ -6,16 +6,167 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>CV</title>
   <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
   <style type="text/css">
   details > summary::-webkit-details-marker {
     display: none;
@@ -31,23 +182,39 @@
 <h1 id="milan-aleksić">Milan Aleksić</h1>
 <p>Last updated: 16/04/2025</p>
 <h2 id="personal">Personal</h2>
-<p>Born on 21/12/1983, Smederevo (Serbia), living in Koekelberg (Belgium) since 2011. I have dual citizenship of Belgium and Serbia.</p>
-<p>My website is <a href="https://aleksic.dev">aleksic.dev</a>, email is <a href="mailto:milan@aleksic.dev">milan@aleksic.dev</a> and Bluesky account is: <a href="https://bsky.app/profile/aleksic.dev">aleksic.dev</a>. I am fairly active on <a href="https://github.com/milanaleksic">github.com/milanaleksic</a>. I also have a <a href="https://www.linkedin.com/in/milanaleksic">LinkedIn account</a> if you’d like to connect with me.</p>
+<p>Born on 21/12/1983, Smederevo (Serbia), living in Koekelberg
+(Belgium) since 2011. I have dual citizenship of Belgium and Serbia.</p>
+<p>My website is <a href="https://aleksic.dev">aleksic.dev</a>, email is
+<a href="mailto:milan@aleksic.dev">milan@aleksic.dev</a> and Bluesky
+account is: <a
+href="https://bsky.app/profile/aleksic.dev">aleksic.dev</a>. I am fairly
+active on <a
+href="https://github.com/milanaleksic">github.com/milanaleksic</a>. I
+also have a <a href="https://www.linkedin.com/in/milanaleksic">LinkedIn
+account</a> if you’d like to connect with me.</p>
 <details>
 <summary>
 <h2>
 Education &amp; spoken languages
 </h2>
-<p></summary></p>
-<p>Dipl. Ing. Computer Science &amp; Engineering (2008) from <em>University of Belgrade</em> (Serbia), Faculty of Electrical Engineering (ETF). “NARIC – Vlaanderen” <a href="https://aleksic.dev/public/cv-nostrification">recognized my diploma as M.Sc.</a>.</p>
-<p>I can speak in the following languages: <strong>Serbian</strong> (mother tongue), <strong>English</strong> (fluent), <strong>Dutch</strong> (<a href="https://aleksic.dev/public/cefr_en_overzicht_nt2_aanbod.pdf">C1 Effectiveness 1</a>), <strong>French</strong> (A2, basic level)</p>
+</summary>
+<p>Dipl. Ing. Computer Science &amp; Engineering (2008) from
+<em>University of Belgrade</em> (Serbia), Faculty of Electrical
+Engineering (ETF). “NARIC – Vlaanderen” <a
+href="https://aleksic.dev/public/cv-nostrification">recognized my
+diploma as M.Sc.</a>.</p>
+<p>I can speak in the following languages: <strong>Serbian</strong>
+(mother tongue), <strong>English</strong> (fluent),
+<strong>Dutch</strong> (<a
+href="https://aleksic.dev/public/cefr_en_overzicht_nt2_aanbod.pdf">C1
+Effectiveness 1</a>), <strong>French</strong> (A2, basic level)</p>
 </details>
 <details>
 <summary>
 <h2>
 Keywords
 </h2>
-<p></summary></p>
+</summary>
 <p>Java, Go, AWS, Python, PostgreSQL, MySQL</p>
 </details>
 <details>
@@ -55,47 +222,70 @@ Keywords
 <h2>
 Work experience
 </h2>
-<p></summary></p>
+</summary>
 <details>
 <summary>
 <h3>
-[2020-…] Senior Software Engineer @ Soda (remote; HQ in Brussels, Belgium)
+[2020-…] Senior Software Engineer @ Soda (remote; HQ in Brussels,
+Belgium)
 </h3>
-<p></summary></p>
-<p>My role was soda.io Cloud Backend founding engineer (since late spring 2025 also a member of the Foundation team). Programming languages I used were Java, Python and Go.</p>
-<p>I became the company backend guy &amp; MySQL perf guy and helped the company grow 100x in customers and revenue over 5 years without high-profile incidents of the Soda Cloud product. I had a multi-hat impact on org through domain, infra and system design. Maintainer of Soda k8s agent, Vault Decrypter, warehouse source preparation, public API, OpenAPI generator, custom DI/DB framework and other complex features and mini-services.</p>
-<p>I made an internal platform CLI tool (<code>dopy</code> / <code>dogo</code>) for many painful DevOps automation tasks - v1 Python, v2 Go (APIs from AWS/Okta/Datadog/k8s/soda cloud, SQLite, Perfetto).</p>
+</summary>
+<p>My role was soda.io Cloud Backend founding engineer (since late
+spring 2025 also a member of the Foundation team). Programming languages
+I used were Java, Python and Go.</p>
+<p>I became the company backend guy &amp; MySQL perf guy and helped the
+company grow 100x in customers and revenue over 5 years without
+high-profile incidents of the Soda Cloud product. I had a multi-hat
+impact on org through domain, infra and system design. Maintainer of
+Soda k8s agent, Vault Decrypter, warehouse source preparation, public
+API, OpenAPI generator, custom DI/DB framework and other complex
+features and mini-services.</p>
+<p>I made an internal platform CLI tool (<code>dopy</code> /
+<code>dogo</code>) for many painful DevOps automation tasks - v1 Python,
+v2 Go (APIs from AWS/Okta/Datadog/k8s/soda cloud, SQLite, Perfetto).</p>
 </details>
 <details>
 <summary>
 <h3>
 [2017-2020] Expert Software Engineer @ TomTom (Ghent, Belgium)
 </h3>
-<p></summary></p>
-<h4 id="mpu-core-coverage-creation-extension-team">MPU Core Coverage Creation &amp; Extension Team</h4>
+</summary>
+<h4 id="mpu-core-coverage-creation-extension-team">MPU Core Coverage
+Creation &amp; Extension Team</h4>
 <ul>
-<li><em>MLF library</em>: authored code-generated Java wrapper around GDAL OpenFileGDB (later extended to PostGIS and GeoPackage).
+<li><em>MLF library</em>: authored code-generated Java wrapper around
+GDAL OpenFileGDB (later extended to PostGIS and GeoPackage).
 <ul>
-<li>Custom ANTLR grammar for extended validation and Python/Markdown doc generator</li>
+<li>Custom ANTLR grammar for extended validation and Python/Markdown doc
+generator</li>
 </ul></li>
-<li><em>Sinatra</em>: Led migration of a complex process into AWS for GIS source data digestion
+<li><em>Sinatra</em>: Led migration of a complex process into AWS for
+GIS source data digestion
 <ul>
 <li>PostgreSQL RDS, Spring Boot 2, SQS, ECS, Terraform, Vue.js</li>
 </ul></li>
-<li><em>Pupin</em>: created machine learning cloud service for data classification (plural junctions problem)
+<li><em>Pupin</em>: created machine learning cloud service for data
+classification (plural junctions problem)
 <ul>
-<li>Training: PostGIS, Python, Scikit-Learn, XGBoost, (Geo)Pandas, Jupyter</li>
-<li>Online+Batch prediction: Terraform / AWS ECS, Spring Boot 2, XGBoost</li>
+<li>Training: PostGIS, Python, Scikit-Learn, XGBoost, (Geo)Pandas,
+Jupyter</li>
+<li>Online+Batch prediction: Terraform / AWS ECS, Spring Boot 2,
+XGBoost</li>
 </ul></li>
-<li><em>Dumbo</em>: migration of internal heavily used batch processing tool into the cloud
+<li><em>Dumbo</em>: migration of internal heavily used batch processing
+tool into the cloud
 <ul>
-<li>AWS Batch, ECS, PostgreSQL, S3, X-Ray; Spring Boot 2, Terraform, Python, Jenkins</li>
+<li>AWS Batch, ECS, PostgreSQL, S3, X-Ray; Spring Boot 2, Terraform,
+Python, Jenkins</li>
 </ul></li>
 </ul>
 <h4 id="hermes-team">Hermes team</h4>
 <ul>
-<li><em>Nozem</em>: always-up-to-date OpenStreetMap ingestion service into core TomTom data layer: Kafka, PostgreSQL, Python, Spring Boot, Jenkins</li>
-<li><em>Lego</em>: automated OpenStreetMap features ingestion: k8s, Python, Java, QGIS plugins</li>
+<li><em>Nozem</em>: always-up-to-date OpenStreetMap ingestion service
+into core TomTom data layer: Kafka, PostgreSQL, Python, Spring Boot,
+Jenkins</li>
+<li><em>Lego</em>: automated OpenStreetMap features ingestion: k8s,
+Python, Java, QGIS plugins</li>
 </ul>
 </details>
 <details>
@@ -103,26 +293,31 @@ Work experience
 <h3>
 [2013-2017] {Senior, Lead} Software Engineer @ Basware (Aalst, Belgium)
 </h3>
-<p></summary></p>
+</summary>
 <p>Projects:</p>
 <ul>
-<li><em>Basware Network Portal</em>: Full-stack development role on online and internal services
+<li><em>Basware Network Portal</em>: Full-stack development role on
+online and internal services
 <ul>
 <li>Tech stack: Play2, Scala, Java8, MongoDB, Spring, Chef, Go</li>
 <li>Rewritten core validation business rules implementation (Java)</li>
 </ul></li>
-<li><em>Basware e-Archiving</em>: DevOps lead-in-charge and one of lead developers
+<li><em>Basware e-Archiving</em>: DevOps lead-in-charge and one of lead
+developers
 <ul>
 <li>Tech stack: CloudFormation, Jenkins, Bash, AWS CLI</li>
-<li>Cloud stack: Java Lambda functions, API GW, S3, DynamoDB, SQS, Splunk</li>
+<li>Cloud stack: Java Lambda functions, API GW, S3, DynamoDB, SQS,
+Splunk</li>
 </ul></li>
-<li><em>Norsu</em> (Groovy, Cucumber, Gradle): Cross-systems end-to-end testing</li>
+<li><em>Norsu</em> (Groovy, Cucumber, Gradle): Cross-systems end-to-end
+testing</li>
 <li>Business Metrics dashboards (Akka and Dashing.io)</li>
 <li>Migration of legacy Resin applications to Tomcat cluster
 <ul>
 <li>Oracle, JSP, RMI, Ant, Tomcat, Apache2</li>
 </ul></li>
-<li><em>HAL9000</em> (Go): Flowdock bot (CI/CD automation helper for 100+ developers)</li>
+<li><em>HAL9000</em> (Go): Flowdock bot (CI/CD automation helper for
+100+ developers)</li>
 </ul>
 </details>
 <details>
@@ -130,28 +325,39 @@ Work experience
 <h3>
 [2006-2013] Previous work experience
 </h3>
-<p></summary></p>
+</summary>
 <p>
 <footer>
 Reach out for a chat if you want more details about things in this list.
 </footer>
 </p>
-<p><strong>2014</strong>: Freelance Consultant (remote) @ Gtech UK (<em>Brussels, Belgium</em>)</p>
-<p><strong>2011-2013</strong>: Software consultant @ Cronos (Belgium) (<em>Brussels, Belgium</em>)</p>
-<p><strong>2009-2011</strong>: Software Engineer II @ Gtech G2 Sports Betting (<em>Belgrade, Serbia</em>)</p>
-<p><strong>2007-2009</strong>: Java Developer @ Arius (<em>Belgrade, Serbia</em>)</p>
-<p><strong>2006</strong>: Intern software developer @ ESAProjekt (<em>Katowice, Poland</em>)</p>
+<p><strong>2014</strong>: Freelance Consultant (remote) @ Gtech UK
+(<em>Brussels, Belgium</em>)</p>
+<p><strong>2011-2013</strong>: Software consultant @ Cronos (Belgium)
+(<em>Brussels, Belgium</em>)</p>
+<p><strong>2009-2011</strong>: Software Engineer II @ Gtech G2 Sports
+Betting (<em>Belgrade, Serbia</em>)</p>
+<p><strong>2007-2009</strong>: Java Developer @ Arius (<em>Belgrade,
+Serbia</em>)</p>
+<p><strong>2006</strong>: Intern software developer @ ESAProjekt
+(<em>Katowice, Poland</em>)</p>
 </details>
 <details>
 <summary>
 <h2>
 Selected open source projects
 </h2>
-<p></summary></p>
+</summary>
 <ul>
-<li>Advent of Code 2023: <a href="https://github.com/milanaleksic/adventofcode2023">github.com/milanaleksic/adventofcode2023</a> (Zig)</li>
-<li>Personal Web site: <a href="https://github.com/milanaleksic/aleksic.dev">github.com/milanaleksic/aleksic.dev</a> (Hugo, Cloudflare Pages)</li>
-<li>Advent of Code 2018: <a href="https://github.com/milanaleksic/adventofcode2018">github.com/milanaleksic/adventofcode2018</a> (Go)</li>
+<li>Advent of Code 2023: <a
+href="https://github.com/milanaleksic/adventofcode2023">github.com/milanaleksic/adventofcode2023</a>
+(Zig)</li>
+<li>Personal Web site: <a
+href="https://github.com/milanaleksic/aleksic.dev">github.com/milanaleksic/aleksic.dev</a>
+(Hugo, Cloudflare Pages)</li>
+<li>Advent of Code 2018: <a
+href="https://github.com/milanaleksic/adventofcode2018">github.com/milanaleksic/adventofcode2018</a>
+(Go)</li>
 </ul>
 </details>
 <details>
@@ -159,11 +365,20 @@ Selected open source projects
 <h2>
 Selected closed source personal projects
 </h2>
-<p></summary></p>
+</summary>
 <ul>
-<li>Home Laboratory: a hybrid cluster (arm/amd, RPis/NUC Proxmox/Synology NAS, home/Oracle Cloud) connected using Tailscale. Uses Ansible for foundational setup and HashiCorp Nomad for container scheduling (40+ services like Gitea, Minecraft, yarr, etc.). Deep monitoring via Grafana Stack and InfluxDB. Slowly migrated to k3s.</li>
-<li>Thought Train (Go, PostgreSQL, NATS, htmx) my main side project: a feature-rich web page content extraction, note taking &amp; book annotation distributed service; utilizes an ANTLR Search Query grammar, Pulumi AWS and with dedicated mobile applications (Android, iOS, using Flutter) and a Chrome Extension (Svelte)</li>
-<li>Batler (Go): personal Telegram bot I use for homelab automation tasks and as the main notification pipeline</li>
+<li>Home Laboratory: a hybrid cluster (arm/amd, RPis/NUC
+Proxmox/Synology NAS, home/Oracle Cloud) connected using Tailscale. Uses
+Ansible for foundational setup and HashiCorp Nomad for container
+scheduling (40+ services like Gitea, Minecraft, yarr, etc.). Deep
+monitoring via Grafana Stack and InfluxDB. Slowly migrated to k3s.</li>
+<li>Thought Train (Go, PostgreSQL, NATS, htmx) my main side project: a
+feature-rich web page content extraction, note taking &amp; book
+annotation distributed service; utilizes an ANTLR Search Query grammar,
+Pulumi AWS and with dedicated mobile applications (Android, iOS, using
+Flutter) and a Chrome Extension (Svelte)</li>
+<li>Batler (Go): personal Telegram bot I use for homelab automation
+tasks and as the main notification pipeline</li>
 <li>Novinarnica (Go): content crawler and CBR packager of magazines</li>
 </ul>
 </details>
