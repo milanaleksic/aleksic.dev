@@ -66,8 +66,8 @@ theme = "hugo-identity-theme"
 
 	[[params.social]]
 		title = "Bluesky"
-		icon = "fa-brands fa-bluesky"
-		link = "https://bsky.app/profile/aleksic.dev"
+		icon = "fa-brands fa-twitter"
+		link = https://x.com/milanaleksic"
 
 	[[params.social]]
 		title = "LinkedIn"
