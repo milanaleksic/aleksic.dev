@@ -6,90 +6,89 @@ copyright = "Milan Aleksic. All rights reserved."
 theme = "hugo-identity-theme"
 
 [params]
-  Author = "Milan Aleksić"
-  logo = "https://www.gravatar.com/avatar/3d3fc6a1bde744f0f1003880ed72afad"
+Author = "Milan Aleksić"
+logo = "https://www.gravatar.com/avatar/3d3fc6a1bde744f0f1003880ed72afad"
 
-	# Images settings
-	# Icons, backgrounds and avatars folders are placed in theme's static/images folder.
-	# You may place your images in corresponding folders and then set only filenames below to
-	# change page's appearance
-	
-	favicon = "favicon.ico"
-	appletouchicon = "apple-touch-icon-precomposed.png"
-	background = "bg1.jpg"
-	avatar = "gravatar.jpg"
+# Images settings
+# Icons, backgrounds and avatars folders are placed in theme's static/images folder.
+# You may place your images in corresponding folders and then set only filenames below to
+# change page's appearance
 
-  # Custom styling
-  # To customize the styling of this theme, uncomment and edit the following line to point 
-  # to your site's css in the assets/ directory. 
+favicon = "favicon.ico"
+appletouchicon = "apple-touch-icon-precomposed.png"
+background = "bg1.jpg"
+avatar = "gravatar.jpg"
 
-  # custom_css = ["css/foo.bar"]
-	
-	# Personal settings
-	
-    name = "Milan Aleksić"
-	position = "Software engineer and tinkerer"
-	position2 = "Backend @ Soda.io"
-	
-	# Extra stuff
-	# NOTE: There is little different extra stuff in original Identity theme by HTML5 UP.
-	# You can play with it downlading original theme right here:
-	# html5up.net/identity/download
-	#
-	# Since this template is static, the contact form uses www.formspree.io as a
-	# proxy. The form makes a POST request to their servers to send the actual
-	# email. Visitors can send up to a 1000 emails each month for free.
-    #
-    # What you need to do for the setup?
-    #
-    # - set your email address under 'email' below
-	# - enable form by setting 'enable' to 'true'
-    # - upload the generated site to your server
-    # - send a dummy email yourself to confirm your account
-    # - click the confirm link in the email from www.formspree.io
-    # - you're done. Happy mailing!
-	
-	email = "milan@aleksic.dev"
-	
-	# Contact form settings
-		
-	[params.contact]
-		enable = false
-		formTitle = "Contact Me!"
-		namePlaceholder = "Name"
-		emailPlaceholder = "Email"
-		messagePlaceholder = "Message"
-		buttonText = "Send it"
-		
-	# Social settings
-	# You may change these with your social links or add others
+# Custom styling
+# To customize the styling of this theme, uncomment and edit the following line to point 
+# to your site's css in the assets/ directory. 
 
-	[[params.social]]
-		title = "Bluesky"
-		icon = "fa-brands fa-twitter"
-		link = https://x.com/milanaleksic"
+# custom_css = ["css/foo.bar"]
 
-	[[params.social]]
-		title = "LinkedIn"
-		icon = "fa-brands fa-linkedin"
-		link = "https://www.linkedin.com/in/milanaleksic"
+# Personal settings
 
-	[[params.social]]
-		title = "Email"
-		icon = "fa-solid fa-envelope"
-		link = "mailto:milan@aleksic.dev"
+name = "Milan Aleksić"
+position = "Software engineer and tinkerer"
+position2 = "Backend @ Soda.io"
 
-	[[params.social]]
-		title = "CV"
-		icon = "fa-solid fa-file-pdf"
-		link = "https://aleksic.dev/public/cv.pdf"
-		
-	[[params.social]]
-		title = "Blog"
-		icon = "fa-solid fa-pencil"
-		link = "https://blog.aleksic.dev"
-	
-	# Footer settings
-	[params.footer]
-		copyright = "Milan Aleksić"
-		
+# Extra stuff
+# NOTE: There is little different extra stuff in original Identity theme by HTML5 UP.
+# You can play with it downlading original theme right here:
+# html5up.net/identity/download
+#
+# Since this template is static, the contact form uses www.formspree.io as a
+# proxy. The form makes a POST request to their servers to send the actual
+# email. Visitors can send up to a 1000 emails each month for free.
+#
+# What you need to do for the setup?
+#
+# - set your email address under 'email' below
+# - enable form by setting 'enable' to 'true'
+# - upload the generated site to your server
+# - send a dummy email yourself to confirm your account
+# - click the confirm link in the email from www.formspree.io
+# - you're done. Happy mailing!
+
+email = "milan@aleksic.dev"
+
+# Contact form settings
+
+[params.contact]
+enable = false
+formTitle = "Contact Me!"
+namePlaceholder = "Name"
+emailPlaceholder = "Email"
+messagePlaceholder = "Message"
+buttonText = "Send it"
+
+# Social settings
+# You may change these with your social links or add others
+
+[[params.social]]
+title = "X"
+icon = "fa-brands fa-twitter"
+link = "https://x.com/milanaleksic"
+
+[[params.social]]
+title = "LinkedIn"
+icon = "fa-brands fa-linkedin"
+link = "https://www.linkedin.com/in/milanaleksic"
+
+[[params.social]]
+title = "Email"
+icon = "fa-solid fa-envelope"
+link = "mailto:milan@aleksic.dev"
+
+[[params.social]]
+title = "CV"
+icon = "fa-solid fa-file-pdf"
+link = "https://aleksic.dev/public/cv.pdf"
+
+[[params.social]]
+title = "Blog"
+icon = "fa-solid fa-pencil"
+link = "https://blog.aleksic.dev"
+
+# Footer settings
+[params.footer]
+copyright = "Milan Aleksić"
