@@ -180,7 +180,7 @@
 </head>
 <body>
 <h1 id="milan-aleksić">Milan Aleksić</h1>
-<p>Last updated: 25/10/2026</p>
+<p>Last updated: 07/11/2026</p>
 <h2 id="personal">Personal</h2>
 <p>Born on 21/12/1983, Smederevo (Serbia), living in Koekelberg
 (Belgium) with my wife and children since 2011. I hold dual citizenship
@@ -216,7 +216,9 @@ Effectiveness 1</a>), <strong>French</strong> (A2, basic level)</p>
 Keywords
 </h2>
 </summary>
-<p>Java, Go, AWS, Python, PostgreSQL, MySQL, ClickHouse</p>
+<p>Java, Spring Boot, Go, Python, AWS, Kubernetes, PostgreSQL, MySQL,
+ClickHouse, OAuth/SAML/SCIM, agentic AI development (Claude Code,
+MCP)</p>
 </details>
 <details>
 <summary>
@@ -231,15 +233,30 @@ Work experience
 Belgium)
 </h3>
 </summary>
-<p>Led architectural changes and AI adoption to support rapid ARR growth
-and drive Product &amp; Engineering deliverables through my role in the
-platform team. Some examples of hands-on work done: cross-team framework
-standardization, introduction of new services, guidance for effective
-usage of LLMs, etc.</p>
-<p>Increased internal developer velocity by creating <code>spritz</code>
-(a local E2E development platform) and <code>chain</code> (an agentic
-development system with autonomous PR/CI/CD management and background
-ticket/review control planes, basically “factory with lights on”).</p>
+<p>Member of the platform team, where I lead architectural changes and
+AI adoption across Product &amp; Engineering to support rapid ARR
+growth, while staying hands-on. Highlights:</p>
+<ul>
+<li><strong>Platform core</strong>: migrated the backend from our
+in-house DI framework to Spring Boot 4, with team-wide conventions
+enforced by ArchUnit</li>
+<li><strong>Usage-based licensing</strong>: built the SPU consumption
+pipeline end to end (ingest, reconciliation, usage ledger, public API)
+and co-built the internal consumption dashboard</li>
+<li><strong>Enterprise identity</strong>: SCIM 2.0 provisioning, SAML
+improvements and service account roles</li>
+<li><strong>AI &amp; MCP</strong>: end-to-end OAuth solution with
+dynamic client registration (DCR) for the remote MCP server on our
+platform</li>
+<li><strong>Performance &amp; CI/CD</strong>: ClickHouse read paths,
+MySQL tuning, feature flips moved from AWS SSM to MySQL, and a faster,
+sharded backend test pipeline</li>
+</ul>
+Increased developer velocity by creating <code>spritz</code> (a local
+E2E development platform) and <code>chain</code> (an agentic development
+system with autonomous PR/CI/CD management and background ticket/review
+control planes, basically a “factory with the lights on”).
+</details>
 <details>
 <summary>
 <h3>
